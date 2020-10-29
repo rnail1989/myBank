@@ -14,10 +14,14 @@ public class BankService {
 
     }
     public double calculateCashback(int amount) {
-        if (amount < 3000_00) {
+        int cashbackLimit = 3000_00;
+        int cashbackPersent=3;
+
+
+        if (amount < cashbackLimit) {
             return 0;
         }
-        int total = amount / (3 * 100);
+        int total = amount / (cashbackPersent * 100);
         return total;
     }
 
