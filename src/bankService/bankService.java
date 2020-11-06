@@ -1,6 +1,6 @@
-package BankService;
+package bankService;
 
-public class BankService {
+public class bankService {
 
     public double calculateDeposit(double summ, double persent, int month) {
         if (month <= 0) {
